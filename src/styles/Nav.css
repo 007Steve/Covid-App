@@ -1,0 +1,30 @@
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1d1d46;
+    color: #6A6A9F;
+    height: 4vh;
+}
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    max-width: 60%;
+    flex: 1;
+    border-radius: 10px;
+    padding: .20rem;
+}
+input{
+    width: 100%;
+    background-color: black;
+    outline: none;
+    border: none;
+}
+img{
+    height: 30px;
+}
+.icons{
+margin: 1rem;
+}
