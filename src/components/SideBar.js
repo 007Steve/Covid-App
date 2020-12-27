@@ -6,7 +6,7 @@ function SideBar() {
   return (
     <div className="sidebar">
       <div className="sidebar__container">
-        <h2>Statistics</h2>
+        <h2> Global Statistics</h2>
         <Card />
         
         <div className="sidebar__countries shadow">
