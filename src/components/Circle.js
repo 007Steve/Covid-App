@@ -10,6 +10,9 @@ function Circle({
   left,
   right,
   bottom,
+  title,
+  name,
+  number,
 }) {
   const myStyle = {
     height: `${height}`,
@@ -28,9 +31,9 @@ function Circle({
   return (
     <div className="circle">
       <span style={myStyle} class="dot">
-          <p className="i">Albania</p>
-          <h3 className="i">23232</h3>
-          <p className="i">case</p>
+        <p className="i">{name}</p>
+        <h3 className="i">{number}</h3>
+        <p className="i">{title}</p>
       </span>
     </div>
   );
