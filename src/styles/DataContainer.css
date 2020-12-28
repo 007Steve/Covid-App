@@ -1,0 +1,31 @@
+.datacontainer {
+  flex: 1;
+  background-color: #dee3f3;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+.datacontainer__top {
+  text-align: center;
+}
+.datacontainer__country {
+  margin-top: 1rem;
+  line-height: 3.5;
+  font-weight: 700;
+  font-size: 0.4rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.datacontainer__countyName {
+  background-color: white;
+  width: 25%;
+  margin: 0 auto;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+.datacontainer__center {
+  display: flex;
+ align-items: center;
+  flex-wrap: wrap;
+  
+ 
+}

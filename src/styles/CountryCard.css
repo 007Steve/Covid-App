@@ -1,0 +1,13 @@
+.countrycard {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+.green {
+  color: #06bb2e;
+}
+
+.red {
+  color: rgb(255, 0, 0);
+}
