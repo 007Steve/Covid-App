@@ -118,7 +118,7 @@ function DataContainer() {
           colorTwo="AE92EC"
           position="relative"
           top="170px"
-          left="80px"
+          left="40px"
           right=""
           bottom=""
           title=""
