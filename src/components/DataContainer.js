@@ -112,8 +112,8 @@ function DataContainer() {
           number=""
         />
         <Circle
-          height="130px"
-          width="130px"
+          height="100px"
+          width="100px"
           colorOne="575AC6"
           colorTwo="AE92EC"
           position="relative"
@@ -122,8 +122,8 @@ function DataContainer() {
           right=""
           bottom=""
           title=""
-          name="Total Recovered"
-          number={countries.recovered}
+          name=""
+          number=""
         />
       </div>
     </div>
