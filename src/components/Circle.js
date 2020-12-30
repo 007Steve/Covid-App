@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/Circle.css";
+import { motion } from "framer-motion";
 function Circle({
   height,
   width,
@@ -29,13 +30,19 @@ function Circle({
     bottom: `${bottom}`,
   };
   return (
-    <div className="circle">
+    <motion.div
+      animate={{ scale: 1.0 }}
+    
+      whileTap={{ scale: 0.9 }}
+      drag
+      className="circle"
+    >
       <span style={myStyle} class="dot">
         <p className="i">{name}</p>
         <h3 className="i">{number}</h3>
         <p className="i">{title}</p>
       </span>
-    </div>
+    </motion.div>
   );
 }
 
