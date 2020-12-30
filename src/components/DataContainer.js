@@ -3,6 +3,7 @@ import "../styles/DataContainer.css";
 import Circle from "./Circle";
 import { selectInput } from "../features/inputSlice";
 import { useSelector } from "react-redux";
+
 function DataContainer() {
   const [countries, setCountries] = useState([]);
   const inputs = useSelector(selectInput);
