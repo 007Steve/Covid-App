@@ -3,6 +3,7 @@
   background-color: #dee3f3;
   border-top-left-radius: 50px;
   border-bottom-left-radius: 50px;
+  height: 100vh;
 }
 .datacontainer__top {
   text-align: center;
