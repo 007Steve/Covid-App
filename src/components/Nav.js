@@ -26,7 +26,8 @@ function Nav() {
           value={input}
           onChange={(e) => setInput(e.target.value)}
         />
-        <SearchIcon type="submit"
+        <SearchIcon  type="submit"
+        className="nav__icon"
           onClick={() => {
             dispatch(addInput(input));
             setInput("");
