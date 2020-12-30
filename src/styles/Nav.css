@@ -32,4 +32,9 @@ img {
 }
 .nav__icons {
   margin: 1rem;
+  cursor: pointer;
+}
+.nav__icon{
+  cursor: pointer;
+
 }
