@@ -10,6 +10,11 @@ function Nav() {
   const [input, setInput] = useState([]);
   const dispatch = useDispatch();
 
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+    dispatch(addInput(input));
+    setInput("");
+  };
   return (
     <div className="nav">
       <div className="nav__left">
@@ -19,20 +24,19 @@ function Nav() {
         />
         <h3>Covid Cases</h3>
       </div>
-      <form className="nav__center" type="submit">
+      <form
+        className="nav__center"
+        onSubmit={(e) => {
+          handleFormSubmit(e);
+        }}
+      >
         <input
           type="text"
           placeholder="Search "
           value={input}
           onChange={(e) => setInput(e.target.value)}
         />
-        <SearchIcon  type="submit"
-        className="nav__icon"
-          onClick={() => {
-            dispatch(addInput(input));
-            setInput("");
-          }}
-        />
+        <SearchIcon type="submit" className="nav__icon" />
       </form>
       <div className="nav__right">
         <PermIdentityIcon className="nav__icons" />
