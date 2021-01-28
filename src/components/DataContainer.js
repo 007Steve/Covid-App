@@ -3,7 +3,7 @@ import "../styles/DataContainer.css";
 import Circle from "./Circle";
 import { selectInput } from "../features/inputSlice";
 import { useSelector } from "react-redux";
-
+import { motion,AnimatePresence } from "framer-motion"
 function DataContainer() {
   const [countries, setCountries] = useState([]);
   const inputs = useSelector(selectInput);
@@ -24,7 +24,8 @@ function DataContainer() {
         <p className="datacontainer__country">Country</p>
         <h4 className="datacontainer__countyName">{countries.country}</h4>
       </div>
-      <div className="datacontainer__center">
+      <AnimatePresence>
+      <motion.div layout className="datacontainer__center">
         <Circle
           height="130px"
           width="130px"
@@ -126,7 +127,8 @@ function DataContainer() {
           name=""
           number=""
         />
-      </div>
+      </motion.div>
+      </AnimatePresence>
     </div>
   );
 }
