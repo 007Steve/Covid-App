@@ -32,7 +32,7 @@ function Nav() {
       >
         <input
           type="text"
-          placeholder="Search "
+          placeholder="Search by Country "
           value={input}
           onChange={(e) => setInput(e.target.value)}
         />
