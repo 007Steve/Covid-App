@@ -15,6 +15,8 @@ function Circle({
   name,
   number,
 }) {
+
+ 
   const myStyle = {
     height: `${height}`,
     width: `${width}`,
@@ -31,8 +33,8 @@ function Circle({
   };
   return (
     <motion.div
-      animate={{ scale: 1.0 }}
-    
+      animate={{ scale: 1 }}
+      layout
       whileTap={{ scale: 0.9 }}
       drag
       className="circle"
