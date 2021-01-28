@@ -1,11 +1,7 @@
 .sidebar {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-width: 23%;
+  margin-right: 2rem;
 }
 .sidebar__container {
-
 }
 h2 {
   font-weight: 500;
